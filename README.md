@@ -14,4 +14,4 @@ The `examples` package contains classes named after the topic they cover. Each c
 The `exercises` package has exercises to be completed in order to demonstrate understanding of the concept. You should complete the provided methods following the directions given in the `TODO` comment. You may check your answers using the existing JUnit unit tests or creating your own.
 
 # Conclusion
-Please feel free to reach out to jbryan76@uncc.edu for suggestions or concerns. All contributions are welcomed, if you submit changes through the UCAE Tutor Material forms please also try to keep the [Github Repo]() up to date as well.
+Please feel free to reach out to jbryan76@uncc.edu for suggestions or concerns. All contributions are welcomed, if you submit changes through the UCAE Tutor Material forms please also try to keep the [Github Repo](https://github.com/jtbry/introToCompSciTutoring) up to date as well.
