@@ -1,44 +1,34 @@
 package edu.uncc.jbryan76;
 
-import edu.uncc.jbryan76.examples.Arrays;
-import edu.uncc.jbryan76.examples.Conditionals;
-import edu.uncc.jbryan76.examples.Loops;
+import edu.uncc.jbryan76.examples.ArraysAndLists;
+import edu.uncc.jbryan76.examples.Inheritance;
+import edu.uncc.jbryan76.examples.Overloading;
 
 public class Main {
     // The main method only runs the examples
-    // Exercises should be checked with Unit Tests
+    // Exercises should be checked by running the Unit Tests
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        System.out.println("--- Arrays and Lists ---");
+        ArraysAndLists arraysAndLists = new ArraysAndLists();
+        System.out.println("- Primitive Arrays -");
+        arraysAndLists.primitiveArrays();
+        System.out.println("- Array Lists -");
+        arraysAndLists.arrayLists();
+        System.out.println("- Iterating -");
+        arraysAndLists.iterating();
+        System.out.println();
 
-        // Conditionals
-        System.out.println("--- Conditionals ---");
-        Conditionals conditionals = new Conditionals();
-        conditionals.booleanEval();
-        System.out.println("--");
-        conditionals.expressionEval();
-        System.out.println("--");
-        conditionals.switchStatements();
-        System.out.println("\n");
+        System.out.println("--- Overloading ---");
+        Overloading overloading = new Overloading();
+        overloading = new Overloading(5, 5);
+        System.out.println("Overload int: " + overloading.add(1, 1));
+        System.out.println("Overload double: " + overloading.add(1.0, 1.0));
+        System.out.println();
 
-        // Loops
-        System.out.println("--- Loops ---");
-        Loops loops = new Loops();
-        loops.forLoop();
-        System.out.println("--");
-        loops.whileLoop();
-        System.out.println("--");
-        loops.forEachLoop();
-        System.out.println("\n");
-
-        // Arrays
-        System.out.println("--- Arrays ---");
-        Arrays arrays = new Arrays();
-        arrays.creatingArrays();
-        System.out.println("--");
-        arrays.addToArrays();
-        System.out.println("--");
-        arrays.iterateArrays();
-        System.out.println("\n");
-
+        System.out.println("--- Inheritance ---");
+        Inheritance inheritance = new Inheritance();
+        inheritance.demonstrate();
+        System.out.println();
+        
     }
 }
