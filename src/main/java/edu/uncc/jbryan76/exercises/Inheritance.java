@@ -9,7 +9,7 @@ public class Inheritance {
         }
     }
 
-    // TODO: Make Dragon extend from Monster and add a field that is unique to dragons.
+    // TODO: Make a class named Dragon extend from Monster and add a field that is unique to dragons.
     public class Dragon {
     }
 

@@ -1,8 +1,13 @@
 package edu.uncc.jbryan76;
 
+import edu.uncc.jbryan76.examples.Algorithms;
 import edu.uncc.jbryan76.examples.ArraysAndLists;
 import edu.uncc.jbryan76.examples.Inheritance;
 import edu.uncc.jbryan76.examples.Overloading;
+
+import java.util.List;
+
+import static java.util.Arrays.asList;
 
 public class Main {
     // The main method only runs the examples
@@ -29,6 +34,12 @@ public class Main {
         Inheritance inheritance = new Inheritance();
         inheritance.demonstrate();
         System.out.println();
+
+        System.out.println("--- Algorithms ---");
+        Algorithms algorithms = new Algorithms();
+        List<Integer> list = asList(11, 23, 31, 55, 92, 132, 150);
+        System.out.println(algorithms.iterativeBinarySearch(150, list));
+        System.out.println(algorithms.recursiveBinarySearch(150, list, 0, list.size()-1));
         
     }
 }

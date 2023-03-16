@@ -17,6 +17,9 @@ public class Inheritance {
         public Animal(int age) {
             this.age = age;
         }
+
+        // All animals can run
+        public void run() {}
     }
 
     // The following code is a subclass, Ducks are animals, so we should extend from Animal.
@@ -40,6 +43,7 @@ public class Inheritance {
     // The following method demonstrates the usage of the subclass
     public void demonstrate() {
         Duck donald = new Duck(10, 2);
+        donald.run();
 
         // We can use the age field from the Animal super class
         // even though donald is an instance of Duck
